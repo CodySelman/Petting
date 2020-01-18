@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public bool isArmExtending = false;
     public bool isArmRetracting = false;
     private float armSpeed = 1.5f;
+    private Vector3 extendedArmPos = new Vector3(0.25f, -0.7f, 0.2f);
+    private Vector3 retractedArmPos = new Vector3(0.25f, -0.7f, -0.1f);
 
     public new Camera camera;
     public GameObject arms;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        arms.transform.localPosition = retractedArmPos;
     }
 
     private void FixedUpdate()
@@ -75,8 +78,6 @@ public class PlayerController : MonoBehaviour
     private void PetAnimation()
     {
         Vector3 armPos = arms.transform.localPosition;
-        Vector3 extendedArmPos = new Vector3(0.25f, -0.7f, 0.15f);
-        Vector3 retractedArmPos = new Vector3(0.25f, -0.7f, -0.5f);
 
         if (isArmRetracting)
         {
