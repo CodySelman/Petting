@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour
         {
             if (hit.collider.tag == "Pettable")
             {
-                // handle pet here
-                Debug.Log("pet");
+                PettableObjectController pettableObjectController = hit.collider.GetComponentInParent<PettableObjectController>();
+                pettableObjectController.PlayPetSound();
             }
         }
     }
