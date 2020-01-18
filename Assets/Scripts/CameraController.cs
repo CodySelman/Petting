@@ -7,8 +7,8 @@ public class CameraController : MonoBehaviour
 
     private float minimumX = -60.0f;
     private float maximumX = 60.0f;
-    private float sensitivityX = 15.0f;
-    private float sensitivityY = 15.0f;
+    private float sensitivityX = 5.0f;
+    private float sensitivityY = 5.0f;
     private float rotationX = 0.0f;
     private float rotationY = 0.0f;
 
