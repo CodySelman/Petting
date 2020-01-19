@@ -39,6 +39,8 @@ public class PettableObjectController : MonoBehaviour
 
     public void GetTickled()
     {
+        float randomPitchFactor = 1 + Random.Range(-0.1f, 0.1f);
+        audioSource.pitch = audioSource.pitch * randomPitchFactor;
         audioSource.Play();
         hp--;
         if (hp <= 0)
