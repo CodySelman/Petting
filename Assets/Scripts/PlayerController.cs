@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 extendedArmPos = new Vector3(0.25f, -0.7f, 0.2f);
     private Vector3 retractedArmPos = new Vector3(0.25f, -0.7f, -0.1f);
     private int score = 0;
+    private string nextLevel;
+    private int winningScore;
 
     public new Camera camera;
     public GameObject arms;
@@ -25,6 +28,19 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         arms.transform.localPosition = retractedArmPos;
+    }
+
+    private void Start()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        if (sceneName == "Level 1")
+        {
+            winningScore = 10;
+            nextLevel = "1-2 Transition";
+        } else if (sceneName == "Level 2")
+        {
+            winningScore = 24;
+        }
     }
 
     private void FixedUpdate()
@@ -70,7 +86,10 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.GetComponent<PettableObjectController>().hp == 1)
                 {
                     score++;
-                    Debug.Log("score" + score);
+                    if (score >= winningScore)
+                    {
+                        SceneManager.LoadScene(nextLevel);
+                    }
                 }
 
                 AudioSource.PlayClipAtPoint(petSound, transform.position);
