@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip petSound;
     private Vector3 extendedArmPos = new Vector3(0.25f, -0.7f, 0.2f);
     private Vector3 retractedArmPos = new Vector3(0.25f, -0.7f, -0.1f);
+    private int score = 0;
 
     public new Camera camera;
     public GameObject arms;
@@ -66,6 +67,12 @@ public class PlayerController : MonoBehaviour
         {
             if (hit.collider.tag == "Pettable")
             {
+                if (hit.collider.GetComponent<PettableObjectController>().hp == 1)
+                {
+                    score++;
+                    Debug.Log("score" + score);
+                }
+
                 AudioSource.PlayClipAtPoint(petSound, transform.position);
                 PettableObjectController pettableObjectController = hit.collider.GetComponentInParent<PettableObjectController>();
                 pettableObjectController.GetTickled();

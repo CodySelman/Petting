@@ -11,7 +11,7 @@ public class StartController : MonoBehaviour
 
     private void Start()
     {
-        startButton.onClick.AddListener(() => SceneManager.LoadScene("MainScene"));
+        startButton.onClick.AddListener(() => SceneManager.LoadScene("Level 1"));
         quitButton.onClick.AddListener(() => Application.Quit());
     }
 }
