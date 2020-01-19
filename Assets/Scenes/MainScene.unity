@@ -777,6 +777,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 184d8a9024e3b46668bee4f026fe6dd1, type: 3}
   - {fileID: 8300000, guid: 15a9266b3f4f14c51a92719f5e0bf5c3, type: 3}
   - {fileID: 8300000, guid: a72e4c582ff3a42a7ac8424a33c44fc9, type: 3}
+  pettableObjects: []
 --- !u!1 &682893673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 5113f2b3d404a429bb59f74879eb2a39,

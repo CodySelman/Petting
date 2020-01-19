@@ -31,6 +31,10 @@ public class PettableObjectController : MonoBehaviour
             Vector3 deathPos = new Vector3(transform.position.x, transform.position.y + 20, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, deathPos, speed * Time.deltaTime);
         }
+        if (transform.position.y >= 10)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void GetTickled()
