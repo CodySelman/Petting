@@ -11770,6 +11770,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408684357}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1416835329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1416835331}
+  - component: {fileID: 1416835330}
+  m_Layer: 0
+  m_Name: Pet Sounds
+  m_TagString: Pet Sounds
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1416835330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416835329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00457736f4af54bd48c7a05bb8a6fa90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petSounds:
+  - {fileID: 8300000, guid: 7af1bb9e3872c4c43bc5c3217879a6a0, type: 3}
+  - {fileID: 8300000, guid: 8a6ff0d4cc1224a238a782db208a0b88, type: 3}
+  - {fileID: 8300000, guid: e9552edf0436649189c2f611a0deaa95, type: 3}
+  - {fileID: 8300000, guid: 8bfbebced11d34e1e99e69bc178d7842, type: 3}
+  - {fileID: 8300000, guid: f4a1aaa4568594aeda87fc1bf38696cb, type: 3}
+  - {fileID: 8300000, guid: 446b64b831c324c429fcd3d7cd92c096, type: 3}
+  - {fileID: 8300000, guid: 829f0d6a6aa8a474495e193e74b449b5, type: 3}
+  - {fileID: 8300000, guid: 1d8c39fc46a5f4e8ca69fba456a12d89, type: 3}
+  - {fileID: 8300000, guid: b776d5159fa014e8a8f2b8ad439b97fb, type: 3}
+--- !u!4 &1416835331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416835329}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1419560151
 GameObject:
   m_ObjectHideFlags: 0

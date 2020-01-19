@@ -31,7 +31,7 @@ public class PettableObjectController : MonoBehaviour
             Vector3 deathPos = new Vector3(transform.position.x, transform.position.y + 20, transform.position.z);
             transform.position = Vector3.MoveTowards(transform.position, deathPos, speed * Time.deltaTime);
         }
-        if (transform.position.y >= 10)
+        if (transform.position.y >= 20)
         {
             Destroy(gameObject);
         }
@@ -41,6 +41,7 @@ public class PettableObjectController : MonoBehaviour
     {
         float randomPitchFactor = 1 + Random.Range(-0.1f, 0.1f);
         audioSource.pitch = audioSource.pitch * randomPitchFactor;
+        Debug.Log(audioSource.clip.name);
         audioSource.Play();
         hp--;
         if (hp <= 0)

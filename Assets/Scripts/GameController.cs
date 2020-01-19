@@ -15,6 +15,11 @@ public class GameController : MonoBehaviour
 
     public static bool isGamePaused = false;
 
+    private void Awake()
+    {
+        petSounds = GameObject.FindGameObjectWithTag("Pet Sounds").GetComponent<Level1PetSounds>().petSounds;
+    }
+
     private void Start()
     {
         Resume();

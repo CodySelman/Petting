@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pettable
+  - Fire
+  - Pet Sounds
   layers:
   - Default
   - TransparentFX
