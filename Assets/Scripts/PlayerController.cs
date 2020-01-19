@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public bool isArmExtending = false;
     public bool isArmRetracting = false;
     private float armSpeed = 1.5f;
+    public AudioClip petSound;
     private Vector3 extendedArmPos = new Vector3(0.25f, -0.7f, 0.2f);
     private Vector3 retractedArmPos = new Vector3(0.25f, -0.7f, -0.1f);
 
@@ -27,10 +28,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isPetting)
-        {
-            Move();
-        }
+          Move();
     }
 
     private void Update()
@@ -68,7 +66,7 @@ public class PlayerController : MonoBehaviour
         {
             if (hit.collider.tag == "Pettable")
             {
-                // TODO gate this behind a coroutine to sync up with pet animation
+                AudioSource.PlayClipAtPoint(petSound, transform.position);
                 PettableObjectController pettableObjectController = hit.collider.GetComponentInParent<PettableObjectController>();
                 pettableObjectController.PlayPetSound();
             }
