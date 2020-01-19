@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
             {
                 AudioSource.PlayClipAtPoint(petSound, transform.position);
                 PettableObjectController pettableObjectController = hit.collider.GetComponentInParent<PettableObjectController>();
-                pettableObjectController.PlayPetSound();
+                pettableObjectController.GetTickled();
             }
         }
     }

@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public Button quitButton;
 
     public AudioClip[] petSounds;
+    public GameObject[] pettableObjects;
 
     public static bool isGamePaused = false;
 
