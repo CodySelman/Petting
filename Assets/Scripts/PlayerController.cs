@@ -44,6 +44,11 @@ public class PlayerController : MonoBehaviour
         } else if (sceneName == "Level 3")
         {
             winningScore = 45;
+            nextLevel = "3-4 Transition";
+        } else if (sceneName == "Level 4")
+        {
+            winningScore = 15;
+            nextLevel = "Game Over";
         }
     }
 
