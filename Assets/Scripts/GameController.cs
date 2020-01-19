@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
     public Button restartButton;
     public Button quitButton;
 
+    public AudioClip[] petSounds;
+
     public static bool isGamePaused = false;
 
     private void Start()

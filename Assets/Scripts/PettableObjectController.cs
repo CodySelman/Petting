@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class PettableObjectController : MonoBehaviour
 {
-    public AudioClip petSound;
+    private AudioClip petSound;
+
+    private void Start()
+    {
+        GameController gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        AudioClip[] petSoundsArr = gameController.petSounds;
+        int randomIndex = Mathf.FloorToInt(Random.Range(0, petSoundsArr.Length));
+        Debug.Log(randomIndex);
+        petSound = petSoundsArr[randomIndex];
+    }
 
     public void PlayPetSound()
     {
