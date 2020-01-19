@@ -478,35 +478,35 @@ PrefabInstance:
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_text
-      value: 'i hope you got that out of your system.
+      value: 'ok, whatever you do...
 
-        look, nobody else wants to be tickled.
+        don''t go into the main garden...
 
-        you''re starting to make everyone really uncomfortable.
+        all those plants are really sensitive.
 
-        ...
+        i''m serious; they all have eczema!
 
-        hey! don''t run away from me!'
+        the tickling really hurts my babies...'
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 166
+      value: 168
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 29
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
@@ -521,7 +521,12 @@ PrefabInstance:
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 40
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 720595407886305714, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}

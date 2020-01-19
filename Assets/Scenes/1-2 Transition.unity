@@ -478,18 +478,21 @@ PrefabInstance:
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_text
-      value: "wow, thanks...\nthat was great.\nok, none of the other plants need to
-        be tickled.\nyou can go home now...\n...\nhey, wait! \nwhere are you going!?"
+      value: 'please, i''m begging you...
+
+        you had your fun, but now all my plants are starting to feel uncomfortable.
+
+        please don''t tickle any more of my plants.'
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 140
+      value: 145
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 27
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
@@ -499,7 +502,7 @@ PrefabInstance:
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
@@ -514,7 +517,7 @@ PrefabInstance:
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 15
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 720595407886305714, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
