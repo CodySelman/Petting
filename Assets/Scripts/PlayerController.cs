@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
             nextLevel = "2-3 Transition";
         } else if (sceneName == "Level 3")
         {
-            winningScore = 45;
+            winningScore = 24;
             nextLevel = "3-4 Transition";
         } else if (sceneName == "Level 4")
         {
@@ -95,6 +95,7 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.GetComponent<PettableObjectController>().hp == 1)
                 {
                     score++;
+                    Debug.Log(score);
                     if (score >= winningScore)
                     {
                         SceneManager.LoadScene(nextLevel);

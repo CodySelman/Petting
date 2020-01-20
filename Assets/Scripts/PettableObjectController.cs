@@ -41,7 +41,6 @@ public class PettableObjectController : MonoBehaviour
     {
         float randomPitchFactor = 1 + Random.Range(-0.1f, 0.1f);
         audioSource.pitch = audioSource.pitch * randomPitchFactor;
-        Debug.Log(audioSource.clip.name);
         audioSource.Play();
         hp--;
         if (hp <= 0)

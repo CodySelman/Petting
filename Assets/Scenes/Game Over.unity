@@ -478,35 +478,30 @@ PrefabInstance:
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_text
-      value: 'great job...
+      value: 'congratulations, you won!
 
-        guess what?
 
-        the police are here and you''re going to jail.
-
-        i hope you never see another plant,
-
-        ever again!'
+        thanks for tickling'
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 118
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 21
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 22
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
@@ -521,7 +516,7 @@ PrefabInstance:
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 13
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 720595408079739775, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
@@ -536,7 +531,22 @@ PrefabInstance:
     - target: {fileID: 720595407886305715, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 100
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 720595407886305715, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 720595407886305715, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 720595407886305715, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -205
       objectReference: {fileID: 0}
     - target: {fileID: 720595408002052522, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
@@ -561,7 +571,12 @@ PrefabInstance:
     - target: {fileID: 720595408628245065, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 720595408628245066, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c9ab81859e5b4dbfaf9338b2f47b54b, type: 3}

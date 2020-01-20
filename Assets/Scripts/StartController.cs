@@ -30,6 +30,13 @@ public class StartController : MonoBehaviour
         } else if (sceneName == "2-3 Transition")
         {
             startButton.onClick.AddListener(() => SceneManager.LoadScene("Level 3"));
+        } else if (sceneName == "3-4 Transition")
+        {
+            startButton.onClick.AddListener(() => SceneManager.LoadScene("Level 4"));
+        } else if (sceneName == "Game Over")
+        {
+            startButton.onClick.AddListener(() => SceneManager.LoadScene("0-1 Transition"));
+            quitButton.onClick.AddListener(() => Application.Quit());
         }
     }
 }
